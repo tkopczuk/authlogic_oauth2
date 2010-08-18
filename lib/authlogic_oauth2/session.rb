@@ -30,6 +30,13 @@ module AuthlogicOauth2
         rw_config(:oauth2_client_secret, value, '')
       end
       alias_method :oauth2_client_secret=, :oauth2_client_secret
+
+      # * <tt>Default:</tt> ''
+      # * <tt>Accepts:</tt> String
+      def oauth2_display(value = nil)
+        rw_config(:oauth2_display, value, '')
+      end
+      alias_method :oauth2_display=, :oauth2_display
       
       # * <tt>Default:</tt> ''
       # * <tt>Accepts:</tt> String
