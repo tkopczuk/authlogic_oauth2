@@ -116,6 +116,10 @@ module AuthlogicOauth2
         self.class.oauth2_client_secret
       end
       
+      def oauth2_display
+        self.class.oauth2_display
+      end      
+      
       def oauth2_site
         self.class.oauth2_site
       end
